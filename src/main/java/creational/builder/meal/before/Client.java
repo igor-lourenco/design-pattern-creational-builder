@@ -1,6 +1,6 @@
-package creational.builder;
+package creational.builder.meal.before;
 
-import creational.builder.meal.before.FastFoodMeal;
+import creational.builder.meal.before.model.FastFoodMeal;
 
 public class Client {
 

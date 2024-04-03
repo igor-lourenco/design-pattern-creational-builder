@@ -1,4 +1,4 @@
-package creational.builder.meal.before;
+package creational.builder.meal.before.model;
 
 public class FastFoodMeal {
 
