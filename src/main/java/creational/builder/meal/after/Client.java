@@ -1,5 +1,8 @@
 package creational.builder.meal.after;
 
+import creational.builder.meal.after.builder.FastFoodMealBuilder;
+import creational.builder.meal.after.director.MealDirector;
+
 public class Client {
 
     public static void order(String name, FastFoodMealBuilder builder) {
