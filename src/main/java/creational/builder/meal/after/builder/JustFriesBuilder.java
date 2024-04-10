@@ -1,28 +1,28 @@
 package creational.builder.meal.after.builder;
 
-public class Menu2Builder extends FastFoodMealBuilder {
+public class JustFriesBuilder extends FastFoodMealBuilder {
     @Override
     public void buildDrink() {
-	meal.setDrink("Coke");
+	// no drink
     }
 
     @Override
     public void buildMain() {
-	meal.setMain("Cheeseburguer");
+	// no main
     }
 
     @Override
     public void buildSide() {
-	meal.setSide("Fries");
+	meal.setSide("Large Fries");
     }
 
     @Override
     public void buildDessert() {
-	meal.setDessert("Apple Pie");
+	// no dessert
     }
 
     @Override
     public void buildGift() {
-	meal.setToy("Avenger's Toy");
+	// no gift
     }
 }
