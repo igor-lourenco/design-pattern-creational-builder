@@ -9,7 +9,7 @@ public class Client {
      * 
      * - Criação de objetos complexos: O Builder é útil quando você precisa criar
      * objetos que requerem muitos parâmetros ou quando deseja que o processo de
-     * criação de objetos seja mais flexível12.
+     * criação de objetos seja mais flexível.
      * 
      * - Evitar a passagem de parâmetros desnecessários: Para evitar a passagem de
      * vários parâmetros que não serão usados, o padrão Builder sugere que você

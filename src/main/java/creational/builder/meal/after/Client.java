@@ -1,6 +1,7 @@
 package creational.builder.meal.after;
 
 import creational.builder.meal.after.builder.FastFoodMealBuilder;
+import creational.builder.meal.after.builder.FatMealBuilder;
 import creational.builder.meal.after.builder.JustFriesBuilder;
 import creational.builder.meal.after.builder.Menu1Builder;
 import creational.builder.meal.after.builder.Menu2Builder;
@@ -21,6 +22,6 @@ public class Client {
 	order("Burguer", new Menu1Builder());
 	order("Veggie Burguer", new Menu2Builder());
 	order("Just Fries", new JustFriesBuilder());
-//	order("Heart Atack", new FatMealBuilder());
+	order("Heart Atack", new FatMealBuilder());
     }
 }
