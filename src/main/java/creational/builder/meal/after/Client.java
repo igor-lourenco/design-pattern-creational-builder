@@ -11,9 +11,9 @@ public class Client {
 
     public static void order(String name, FastFoodMealBuilder builder) {
 	System.out.println("Ordering a " + name);
-	MealDirector director = new MealDirector(builder);
-	director.constructCombo();
-	System.out.println(director.getCombo());
+	MealDirector director = new MealDirector(builder); // cria classe para etapa das construcoes dos combos
+	director.constructCombo(); // executa as etapas de construçoes
+	System.out.println(director.getCombo()); // retorna toString da classe FastFoodMeal com a construcao do combo criada
 
 	System.out.println("------------------");
     }
