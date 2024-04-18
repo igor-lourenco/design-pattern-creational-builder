@@ -15,3 +15,15 @@ Outra abordagem que não envolve a propagação de subclasses. Seria criar um co
 ![imagem_2](https://github.com/igor-lourenco/design-pattern-creational-builder/blob/main/uml/Imagem_2.png)
 
 Na maioria dos casos a maioria dos parâmetros não será usada, tornando as chamadas do construtor em algo feio de se ver. Por exemplo, apenas algumas refeiçoes terão `dessert`, então os parâmetros relacionados a `dessert` serão inúteis nove em cada dez vezes.
+
+## Solução 
+
+O padrão Builder sugere que extraia o código de construção do objeto para fora de sua própria classe e mova ele para objetos separados chamados builders. “Builder” significa “construtor”.
+
+Imagem_3
+
+O padrão organiza a construção de objetos em uma série de etapas (buildDrink, buildMain, etc.). Para criar um objeto você executa uma série de etapas em um objeto builder. A parte importante é que você não precisa chamar todas as etapas. Você chama apenas aquelas etapas que são necessárias para a produção de uma configuração específica de um objeto.
+
+Algumas das etapas de construção podem necessitar de implementações diferentes quando você precisa construir várias representações. Por exemplo, um pedido com `drink`, `main`, `side`, `dessert` e pedido com apenas `side`
+
+Nesse caso, é mais interessante criar diferentes classes construturas que implementam as mesmas etapas de construção, mas de maneira diferente. Então você pode usar esses builders no processo de construção para produzir diferentes tipos de objetos(`Menu1Builder`, `Menu2Builder`, `JustFriesBuilder`)
