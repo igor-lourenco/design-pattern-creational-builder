@@ -20,7 +20,7 @@ Na maioria dos casos a maioria dos parâmetros não será usada, tornando as cha
 
 O padrão Builder sugere que extraia o código de construção do objeto para fora de sua própria classe e mova ele para objetos separados chamados builders. “Builder” significa “construtor”.
 
-Imagem_3
+![imagem_3](https://github.com/igor-lourenco/design-pattern-creational-builder/blob/main/uml/imagem_3.png)
 
 O padrão organiza a construção de objetos em uma série de etapas (buildDrink, buildMain, etc.). Para criar um objeto você executa uma série de etapas em um objeto builder. A parte importante é que você não precisa chamar todas as etapas. Você chama apenas aquelas etapas que são necessárias para a produção de uma configuração específica de um objeto.
 
