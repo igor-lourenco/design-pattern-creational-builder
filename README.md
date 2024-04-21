@@ -16,6 +16,11 @@ Outra abordagem que não envolve a propagação de subclasses. Seria criar um co
 
 Na maioria dos casos a maioria dos parâmetros não será usada, tornando as chamadas do construtor em algo feio de se ver. Por exemplo, apenas algumas refeiçoes terão `dessert`, então os parâmetros relacionados a `dessert` serão inúteis nove em cada dez vezes.
 
+## Estrutura
+
+![builder_before](https://github.com/igor-lourenco/design-pattern-creational-builder/blob/main/uml/builder_before_1.png)
+
+
 ## Solução 
 
 O padrão Builder sugere que extraia o código de construção do objeto para fora de sua própria classe e mova ele para objetos separados chamados builders. “Builder” significa “construtor”.
