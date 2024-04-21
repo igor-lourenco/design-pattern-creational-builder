@@ -27,3 +27,15 @@ O padrão organiza a construção de objetos em uma série de etapas (buildDrink
 Algumas das etapas de construção podem necessitar de implementações diferentes quando você precisa construir várias representações. Por exemplo, um pedido com `drink`, `main`, `side`, `dessert` e pedido com apenas `side`
 
 Nesse caso, é mais interessante criar diferentes classes construturas que implementam as mesmas etapas de construção, mas de maneira diferente. Então você pode usar esses builders no processo de construção para produzir diferentes tipos de objetos(`Menu1Builder`, `Menu2Builder`, `JustFriesBuilder`)
+
+## Diretor
+
+Um diretor extrai uma série de chamadas para as etapas do builder que usa para construir um produto em uma classe separada. A classe diretor define a ordem na qual executar as etapas de construção, enquanto que o builder provê a implementação dessas etapas.
+
+
+MealDirector.jpg
+
+
+Ter uma classe diretor no programa não é estritamente necessário. Sempre pode chamar as etapas de construção em uma ordem específica diretamente do código cliente(`Client` nesse programa como exemplo). A classe diretor pode ser um bom lugar para colocar várias rotinas de construção para que você possa reutilizá-las em qualquer lugar do programa.
+
+A classe diretor esconde completamente os detalhes da construção do produto do código cliente. O cliente só precisa associar um builder com um diretor, inicializar a construção com o diretor, e então obter o resultado do builder.
