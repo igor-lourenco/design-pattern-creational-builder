@@ -16,7 +16,7 @@ Outra abordagem que não envolve a propagação de subclasses. Seria criar um co
 
 Na maioria dos casos a maioria dos parâmetros não será usada, tornando as chamadas do construtor em algo feio de se ver. Por exemplo, apenas algumas refeiçoes terão `dessert`, então os parâmetros relacionados a `dessert` serão inúteis nove em cada dez vezes.
 
-## Estrutura
+## Estrutura antes
 
 ![builder_before](https://github.com/igor-lourenco/design-pattern-creational-builder/blob/main/uml/builder_before_1.png)
 
@@ -45,7 +45,7 @@ Ter uma classe diretor no programa não é estritamente necessário. Sempre pode
 
 A classe diretor esconde completamente os detalhes da construção do produto do código cliente. O cliente só precisa associar um builder com um diretor, inicializar a construção com o diretor, e então obter o resultado do builder.
 
-## Estrutura 
+## Estrutura depois
 
 ![builder.after](https://github.com/igor-lourenco/design-pattern-creational-builder/blob/main/uml/builder.after.png)
 
