@@ -2,7 +2,6 @@ package creational.builder.spoleto.after.model;
 
 import java.util.List;
 
-import creational.builder.spoleto.before.model.Size;
 
 public class Salad extends Meal {
 

@@ -2,7 +2,6 @@ package creational.builder.spoleto.after.model;
 
 import java.util.List;
 
-import creational.builder.spoleto.before.model.Size;
 
 public abstract class Meal {
     protected List<String> toppings;

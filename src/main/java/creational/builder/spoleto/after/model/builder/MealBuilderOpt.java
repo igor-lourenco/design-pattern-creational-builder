@@ -2,7 +2,8 @@ package creational.builder.spoleto.after.model.builder;
 
 import java.util.List;
 
-import creational.builder.spoleto.before.model.Size;
+import creational.builder.spoleto.after.model.Size;
+
 
 public abstract class MealBuilderOpt {
     protected Size size;
