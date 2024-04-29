@@ -3,6 +3,9 @@ package creational.builder.spoleto.fluent.model.builder;
 import java.util.Arrays;
 import java.util.List;
 
+import creational.builder.spoleto.fluent.model.Pasta;
+import creational.builder.spoleto.fluent.model.Size;
+
 public class PastaBuilder {
     // Mandatory
     protected Size size;
